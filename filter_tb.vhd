@@ -16,7 +16,7 @@ component filter is
            rst_n : in STD_LOGIC;
            start_i : in STD_LOGIC;
            ready_o : out STD_LOGIC;
-           mode_i: in std_logic_vector(1 downto 0);
+           mode_i: in std_logic;
            data_out : out STD_LOGIC_VECTOR (15 downto 0));
 end component;
     file red_output, green_output, blue_output, alpha_output : text;
