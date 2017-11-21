@@ -1,8 +1,6 @@
 
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
 
 entity filter is
     Port ( data_in : in STD_LOGIC_VECTOR (15 downto 0);
@@ -50,9 +48,7 @@ signal neighbour_index: integer range 0 to 8;
 
 begin
 
-ready_o <= ready_out; --when (mode_i = '0') else
-           --(ready_out and wr_blur);
-
+ready_o <= ready_out;
 
 data: dataPath
     port map(
